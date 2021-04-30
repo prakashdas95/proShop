@@ -1,8 +1,8 @@
 {
   "name": "backend",
   "version": "1.0.0",
-  "description": "MERN shoppping app",
-  "main": "index.js",
+  "description": "MERN shopping app",
+  "main": "server.js",
   "type": "module",
   "scripts": {
     "start": "node backend/server",
@@ -20,6 +20,7 @@
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "express-async-handler": "^1.1.4",
+    "jsonwebtoken": "^8.5.1",
     "mongoose": "^5.12.5"
   },
   "devDependencies": {
