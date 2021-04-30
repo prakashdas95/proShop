@@ -17,7 +17,7 @@ app.get('/', (req, res) => {
 // connecting  routes
 app.use('/api/products', productRoutes);
 
-// connecting middlewares
+// connecting middleware
 app.use(notFound);
 app.use(errorHandler);
 
