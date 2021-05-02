@@ -7,7 +7,7 @@ const router = express();
 // @route GET /api/products
 // @access public
 router.route('/').get(getProducts);
-router.route('/').get(getProductsById);
+router.route('/:id').get(getProductsById);
 
 
 export default router;
