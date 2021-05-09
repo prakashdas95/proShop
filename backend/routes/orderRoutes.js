@@ -1,8 +1,8 @@
 import express from "express";
-const router = express.Router();
 import { addOrderItems } from '../controllers/orderController.js';
 import { protect } from '../middleware/authMiddleware.js';
 
-router.route('/').put(protect, addOrderItems);
+const router = express.Router();
+router.route('/').post(protect, addOrderItems);
 
 export default router;

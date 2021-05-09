@@ -27,11 +27,11 @@ const PlaceOrderScreen = ({ history }) => {
     const orderCreate = useSelector(state => state.orderCreate);
     const { order, success, error } = orderCreate;
 
-    useEffect(() => {
-        if (success) {
-            history.push(`/order/${order._id}`);
-        }
-    }, [history, order._id, success]);
+    // useEffect(() => {
+    //     if (success) {
+    //         history.push(`/order/${order._id}`);
+    //     }
+    // }, [history, order._id, success]);
 
     const placeOrderHandler = () => {
         dispatch(createOrder({
@@ -72,7 +72,7 @@ const PlaceOrderScreen = ({ history }) => {
                                         <ListGroup.Item key={index}>
                                             <Row>
                                                 <Col md={1}>
-                                                    <Image src={item.image} alt={item.name} />
+                                                    <Image src={item.image} alt={item.name} fluid rounded />
                                                 </Col>
                                                 <Col>
                                                     <Link to={`/product/${item.product}`}>{item.name}</Link>
