@@ -35,6 +35,7 @@ const ProfileScreen = ({ history }) => {
             }
         }
     }, [dispatch, history, userInfo, user]);
+    
     const submitHandler = e => {
         e.preventDefault();
         if (password !== confirmPassword) {
